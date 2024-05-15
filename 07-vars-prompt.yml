@@ -6,7 +6,7 @@
     private: false
   - name: PASSWORD
     prompt: Please enter your Password
-    proivate: true
+    private: true
   tasks:
   - name: Print override Information
     ansible.builtin.debug:
