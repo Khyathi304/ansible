@@ -1,0 +1,13 @@
+- name: Variables from files
+  hosts: web
+  vars_prompt:
+  - name: USERNAME
+    prompt: Please enter your Username
+    private: false
+  - name: PASSWORD
+    prompt: Please enter your Password
+    proivate: true
+  tasks:
+  - name: Print override Information
+    ansible.builtin.debug:
+      msg: "Hi, UserName: {{USERNAME}}, Password: {{PASSWORD}}"
