@@ -5,6 +5,12 @@
     Student: "Khyathi"
     Duration: "120hrs"
   tasks:
+  - name: Print override Information
+    vars:
+      Course: Terraform
+    ansible.builtin.debug:
+      msg: "Hi, This is {{Student}}, I am Learning {{Course}}, It takes {{Duration}}"
+
   - name: Print Information
     vars:
       Course: Terraform
