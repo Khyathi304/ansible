@@ -4,3 +4,7 @@
   tasks:
   - name: Check User exists or not
     ansible.builtin.command: id expense
+
+  - name: Print
+    ansible.builtin.debug:
+      msg: "Print Hello"
