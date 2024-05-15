@@ -1,7 +1,7 @@
 - name: Variable Preferences
   hosts: web
-  vars:
-    WISHES: "Morning from Play Variable"
+  # vars:
+  #   WISHES: "Morning from Play Variable"
   # vars_files:
   # - vars.yml
   # vars_prompt:
