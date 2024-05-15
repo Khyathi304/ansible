@@ -6,7 +6,7 @@
   - vars.yml
   vars_prompt:
   - name: WISHES
-    Prompt: Please enter WISHES
+    prompt: Please enter WISHES
     private: false
   tasks:
   - name: Check Preference
