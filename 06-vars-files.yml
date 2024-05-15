@@ -1,0 +1,8 @@
+- name: Variables from files
+  hosts: web
+  vars_files:
+  - vars.yml
+  tasks:
+  - name: Print override Information
+    ansible.builtin.debug:
+      msg: "Hi, This is {{Student}}, I am Learning {{Course}}, It takes {{Duration}}"
