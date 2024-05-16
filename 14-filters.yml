@@ -40,4 +40,4 @@
   - name: min and max
     ansible.builtin.debug:
       msg: Min_age is "{{age | min }}"
-      msg: Max_age is "{{age | max }}"
+      # msg: Max_age is "{{age | max }}"
