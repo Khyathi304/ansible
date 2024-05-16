@@ -28,5 +28,6 @@
   vars:
     numbers: [1, 3, 4, 2, 3, 4, 5, 5, 4, 6, 6]
   tasks:
-  ansible.builtin.debug:
-   msg: "{{numbers | unique }}"
+  - name: remove duplicates
+    ansible.builtin.debug:
+      msg: "{{numbers | unique }}"
