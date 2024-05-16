@@ -3,7 +3,7 @@
   tasks:
   - name: print default value
     ansible.builtin.debug:
-      msg: "Hello {{course | default('Ansible')}}"
+      msg: "Hello {{course | default('ANSIBLE') | lower}}"
 
 - name: Upper case
   hosts: localhost
@@ -13,3 +13,12 @@
   - name: Print UpperCase
     ansible.builtin.debug:
       msg: "{{greeting | upper}}"
+
+- name: Lower Case
+  hosts: localhost
+  vars:
+    greet: KHYATHI PAPA
+  tasks:
+  - name: Lower Case
+    ansible.builtin.debug:
+      msg: "{{greet | lower}}"
